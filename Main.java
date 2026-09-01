@@ -2,15 +2,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
-        double altura;
-        double peso;
-        double IMC;
-        System.out.println("Digite seu peso em Kg: ");
-        peso =  input.nextDouble();
-        System.out.println("Digite sua altura em metros:" );
-        altura = input.nextDouble();
+        double salario;
+        double aumento;
+        double Satu;
 
-        IMC = peso/altura * altura;
-        System.out.println("O IMC calculado foi:"+ " "+ IMC);
+        System.out.println("Escreva o salário atual:");
+        salario = input.nextInt();
+        aumento = salario * 10/100;
+        System.out.println("O valor do aumento é de :" + " "+ aumento);
+        Satu = salario + aumento;
+
+        System.out.println("O salário reajustado é" + " " + Satu);
     }
 }
